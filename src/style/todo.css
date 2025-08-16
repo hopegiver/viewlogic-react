@@ -1,0 +1,138 @@
+/* Todo 페이지 전용 스타일 */
+
+.todo-container {
+  max-width: 420px;
+  margin: 24px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.todo-header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.todo-header h2 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.todo-header small {
+  display: block;
+  margin-top: 8px;
+  color: #7f8c8d;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.todo-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #e1e8ed;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.todo-button {
+  padding: 12px 24px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.todo-button:hover {
+  background: #2980b9;
+}
+
+.todo-button:active {
+  transform: translateY(1px);
+}
+
+.todo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.todo-item:hover {
+  background: #e9ecef;
+}
+
+.todo-checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: #27ae60;
+  cursor: pointer;
+}
+
+.todo-text {
+  flex: 1;
+  font-size: 16px;
+  color: #2c3e50;
+  transition: text-decoration 0.2s ease;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #95a5a6;
+}
+
+.todo-delete {
+  padding: 8px 16px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.todo-delete:hover {
+  background: #c0392b;
+}
+
+.todo-delete:active {
+  transform: translateY(1px);
+}
+
+.todo-empty {
+  text-align: center;
+  color: #95a5a6;
+  font-style: italic;
+  padding: 40px 20px;
+}
