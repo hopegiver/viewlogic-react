@@ -28,4 +28,3 @@ export default function useLogic() {
   
     return { items, input, onChange, onAdd, onToggle, onRemove, doneCount };
   }
-  
